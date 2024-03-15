@@ -1,0 +1,54 @@
+{
+    "tests": [
+        {
+            "name": "requirements.txt has been populated with nbconvert",
+            "setup": "git checkout main",
+            "run": "cat requirements.txt",
+            "input": "",
+            "output": "nbconvert",
+            "comparison": "exact",
+            "timeout": 1,
+            "points": 1
+        },
+        {
+            "name": "rates.ipynb is on branch main",
+            "setup": "git checkout main",
+            "run": "test -e rates.ipynb && echo 'exists' || echo 'not'",
+            "input": "",
+            "output": "exists",
+            "comparison": "exact",
+            "timeout": 1,
+            "points": 1
+        },
+        {
+            "name": "rates.ipynb is NOT on branch gh-pages",
+            "setup": "git checkout gh-pages",
+            "run": "test -e rates.ipynb && echo 'exists' || echo 'not'",
+            "input": "",
+            "output": "not",
+            "comparison": "exact",
+            "timeout": 1,
+            "points": 1
+        },
+        {
+            "name": "rates.html is on branch gh-pages",
+            "setup": "git checkout gh-pages",
+            "run": "test -e rates.html && echo 'exists' || echo 'not'",
+            "input": "",
+            "output": "exists",
+            "comparison": "exact",
+            "timeout": 1,
+            "points": 1
+        },
+        {
+            "name": "rates.html is NOT on branch main",
+            "setup": "git checkout main",
+            "run": "test -e rates.html && echo 'exists' || echo 'not'",
+            "input": "",
+            "output": "not",
+            "comparison": "exact",
+            "timeout": 1,
+            "points": 1
+        }
+    ]
+}

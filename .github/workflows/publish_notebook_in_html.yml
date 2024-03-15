@@ -1,0 +1,40 @@
+name: Publish notebooks to html
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: publish-notebooks
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - name: Set up Python env
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10.13'
+
+      - name: Install pip dependencies
+        run: pip install -r requirements.txt
+
+      - run: git config --global user.name 'Bot'
+      - run: git config --global user.email 'bot@bot.com'
+      - run: git checkout main
+      - run: git checkout gh-pages
+      - run: git checkout main
+      - run: jupyter nbconvert *.ipynb --to html
+      - run: git stash --include-untracked
+      - run: git checkout gh-pages
+      - run: git rm --ignore-unmatch *.html # remove previous files
+      - run: git stash pop
+      - run: git add *.html
+      - run: git commit -m "Publishing notebooks as html on gh-pages"
+      - run: git push origin gh-pages:gh-pages
