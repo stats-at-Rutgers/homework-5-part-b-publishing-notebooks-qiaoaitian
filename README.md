@@ -4,7 +4,7 @@
 
 
 1. My notebook is published as a github gist at    
-<script src="https://gist.github.com/qiaoaitian/8f91cf193e604ea4c7f6d2d1be69d759.js"></script>
+https://gist.github.com/8f91cf193e604ea4c7f6d2d1be69d759.git
 
 2. My notebook is published on ``nbviewer`` at      
 https://nbviewer.org/gist/someGithubUser/????????????????????????/
