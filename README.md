@@ -7,7 +7,7 @@
 https://gist.github.com/8f91cf193e604ea4c7f6d2d1be69d759.git
 
 2. My notebook is published on ``nbviewer`` at      
-https://nbviewer.org/gist/someGithubUser/????????????????????????/
+https://nbviewer.org/gist/qiaoaitian/8f91cf193e604ea4c7f6d2d1be69d759#
 
 3. My GitHub Pages website is published at    
 https://stats-at-rutgers.github.io/Homework-5b-publishing_notebooks-????????/
