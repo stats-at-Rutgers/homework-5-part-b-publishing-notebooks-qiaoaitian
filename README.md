@@ -10,7 +10,7 @@ https://gist.github.com/8f91cf193e604ea4c7f6d2d1be69d759.git
 https://nbviewer.org/gist/qiaoaitian/8f91cf193e604ea4c7f6d2d1be69d759#
 
 3. My GitHub Pages website is published at    
-https://stats-at-rutgers.github.io/Homework-5b-publishing_notebooks-????????/
+https://stats-at-rutgers.github.io/homework-5-part-b-publishing-notebooks-qiaoaitian/
 
 4. My notebook is published as HTML thanks to ``nbconvert`` hosted on Github Pages at     
 https://stats-at-rutgers.github.io/Homework-5b-publishing_notebooks-??????/rates.html
