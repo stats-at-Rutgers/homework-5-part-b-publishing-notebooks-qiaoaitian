@@ -1,6 +1,6 @@
 # Homework-5b-publishing_notebooks
 
-- My netid is ``sth123`` and my name is ``John Doe`` (edit this with your name)
+- My netid is ``yq102`` and my name is ``Yifeng Qiao`` (edit this with your name)
 
 
 1. My notebook is published as a github gist at    
